@@ -1,0 +1,17 @@
+void CALLBACK ExampleFunc(UINT uID, UINT uMsg, DWORD dwUser, DWORD dw1, DWORD dw2)
+{
+
+}
+
+//	초기화
+mmtm_init();
+
+//	시작
+unsigned long exam = mmtm_start(10, ExampleFunc, 0);
+
+//	정지
+mmtm_stop(exam);
+
+//	종료
+mmtm_deinit();
+

@@ -1,0 +1,349 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\UCMC_EducationKit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\UCMC_EducationKit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UCMC_EducationKit 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "UCMC_EducationKit 버전 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_UCMC_EDUCATIONKIT_DIALOG DIALOGEX 0, 0, 567, 333
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "UCMC_EducationKit"
+FONT 9, "굴림"
+BEGIN
+    PUSHBUTTON      "종료",IDCANCEL,135,18,50,14
+    COMBOBOX        IDC_UART_COMBO,23,19,55,114,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "열기",IDC_UART_OPEN_BTN,79,18,50,14
+    GROUPBOX        "Command",IDC_STATIC,18,76,218,32
+    PUSHBUTTON      "ENABLE",IDC_ENABLE,96,88,60,16
+    PUSHBUTTON      "DISABLE",IDC_DISABLE,167,88,60,16
+    GROUPBOX        "1.OPEN/CLOSE",IDC_STATIC,20,7,172,30
+    GROUPBOX        "stauts",IDC_STATIC,19,41,217,32
+    PUSHBUTTON      "STATUS",IDC_STATUS,25,88,60,16
+    LTEXT           "Status",IDC_STATIC_STATUS,23,51,65,16,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "FILE_OPEN",IDC_FILEOPEN,369,167,87,20
+    PUSHBUTTON      "FILE_SAVE",IDC_FILESAVE,466,169,70,19
+    RTEXT           "ContCur",IDC_STATIC,19,122,42,14,SS_CENTERIMAGE
+    RTEXT           "EncPulse",IDC_STATIC,135,122,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_CUR_CONT,63,122,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_CUR_CONT,109,122,15,14
+    RTEXT           "OutputCur",IDC_STATIC,19,139,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_CUR_OUTPUT,63,139,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_CUR_OUTPUT,109,139,15,14
+    RTEXT           "P_Gain",IDC_STATIC,19,156,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_CUR_P_GAIN,63,156,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_CUR_P_GAIN,109,156,15,14
+    RTEXT           "I_Gain",IDC_STATIC,19,172,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_CUR_I_GAIN,63,172,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_CUR_I_GAIN,109,172,15,14
+    RTEXT           "Target_cur",IDC_STATIC,19,187,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_CUR_TARGET,63,187,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_CUR_TARGET,109,187,15,14
+    EDITTEXT        IDC_EDIT_VEL_ENCPULSE,179,122,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_VEL_ENCPULSE,225,122,15,14
+    RTEXT           "Accel",IDC_STATIC,135,140,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_VEL_ACCEL,179,140,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_VEL_ACCEL,225,140,15,14
+    RTEXT           "P_Gain",IDC_STATIC,135,156,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_VEL_P_GAIN,179,156,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_VEL_P_GAIN,225,156,15,14
+    RTEXT           "I_Gain",IDC_STATIC,135,172,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_VEL_I_GAIN,179,172,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_VEL_I_GAIN,225,172,15,14
+    RTEXT           "Target_RPM",IDC_STATIC,135,188,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_VEL_TARGET,179,188,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_VEL_TARGET,225,188,15,14
+    RTEXT           "MaxVel",IDC_STATIC,135,204,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_VEL_MAXVEL,179,204,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_VEL_MAXVEL,225,204,15,14
+    RTEXT           "P_Gain",IDC_STATIC,252,90,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_POS_P_GAIN,296,90,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_POS_P_GAIN,342,90,15,14
+    RTEXT           "I_Gain",IDC_STATIC,252,108,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_POS_I_GAIN,296,108,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_POS_I_GAIN,342,108,15,14
+    RTEXT           "D_Gain",IDC_STATIC,252,124,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_POS_D_GAIN,296,124,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_POS_D_GAIN,342,124,15,14
+    RTEXT           "N_Pos",IDC_STATIC,252,140,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_POS_NEGATIVE,296,140,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_POS_NEGATIVE,342,140,15,14
+    RTEXT           "P_Pos",IDC_STATIC,252,156,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_POS_POSITIVE,296,154,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_POS_POSITIVE,342,156,15,14
+    RTEXT           "Target_Pos",IDC_STATIC,252,172,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_POS_TRAGET,296,172,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_POS_TARGET,342,172,15,14
+    GROUPBOX        "4.2 Velocity Control Gains",IDC_STATIC,130,113,112,111
+    GROUPBOX        "Current Control Gains",IDC_STATIC,14,113,112,111
+    GROUPBOX        "4.1 Position Conrol Gains",IDC_STATIC,246,77,114,130
+    RTEXT           "Actual_Pos",IDC_STATIC,252,186,42,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_POS_ACTUAL,296,186,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "GO",IDC_BUTTON_POS_ACTUAL,342,186,15,14
+    GROUPBOX        "6. Control Command",IDC_STATIC,461,7,83,62
+    PUSHBUTTON      "Go",IDC_SEND_ARRAY,467,43,73,20
+    LTEXT           "VERSION ",IDC_STATIC_VERSION,93,51,142,16,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Create_RAMP",IDC_MAKE,369,79,87,20
+    LTEXT           "Static",IDC_TEST,479,226,42,12
+    PUSHBUTTON      "Send Command",IDC_BUTTON1,467,19,72,20
+    GROUPBOX        "Real_Time",IDC_STATIC,469,198,66,73
+    LTEXT           "Velocity",IDC_TEST2,478,212,42,12
+    LTEXT           "Static",IDC_TEST3,479,256,42,12
+    LTEXT           "Position",IDC_TEST4,478,242,42,12
+    PUSHBUTTON      "Show Graph",IDC_SHOW_GRAPH,466,139,73,21
+    PUSHBUTTON      "Create_STEP",IDC_MAKE_STEP,369,35,87,20
+    GROUPBOX        "2. Control_mode",IDC_STATIC,247,7,110,30
+    CONTROL         "Velocity",IDC_RADIO_VEL,"Button",BS_AUTORADIOBUTTON,254,
+                    19,41,11
+    CONTROL         "Position",IDC_RADIO_POSITION,"Button",
+                    BS_AUTORADIOBUTTON,306,19,41,11
+    PUSHBUTTON      "Create_PARABOLIC",IDC_MAKE_PARA,369,105,87,20
+    RTEXT           "Ramp",IDC_STATIC,371,63,42,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_RAMP,416,63,39,14,ES_AUTOHSCROLL
+    CONTROL         "FB",IDC_RADIO_FB,"Button",BS_AUTORADIOBUTTON,249,53,21,
+                    11
+    CONTROL         "FB+FF1",IDC_RADIO_FF1,"Button",BS_AUTORADIOBUTTON,273,
+                    53,37,11
+    CONTROL         "FB+FF2",IDC_RADIO_FF2,"Button",BS_AUTORADIOBUTTON,309,
+                    53,36,11
+    GROUPBOX        "3. Feedforward_mode",IDC_STATIC,247,43,100,25
+    CONTROL         "POS",IDC_RADIO_GRAPH_POS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,465,116,27,10
+    CONTROL         "VEL",IDC_RADIO_GRAPH_VEL,"Button",BS_AUTORADIOBUTTON,
+                    491,116,26,10
+    CONTROL         "ERR",IDC_RADIO_GRAPH_ERR,"Button",BS_AUTORADIOBUTTON,
+                    517,116,24,10
+    GROUPBOX        "Display_mode",IDC_STATIC,461,106,83,25
+    GROUPBOX        "4.3 Feedforward Control Gains",IDC_STATIC,247,208,113,
+                    43
+    EDITTEXT        IDC_EDIT_FF1,294,219,40,14,ES_AUTOHSCROLL
+    LTEXT           "Kff1",IDC_STATIC,273,221,12,8
+    EDITTEXT        IDC_EDIT_FF2,294,234,40,14,ES_AUTOHSCROLL
+    LTEXT           "Kff2",IDC_STATIC,273,236,12,8
+    GROUPBOX        "7. Time Response",IDC_STATIC,460,70,85,125
+    EDITTEXT        IDC_SAMPLINGNUM,495,85,42,15,ES_AUTOHSCROLL
+    RTEXT           "Step",IDC_STATIC,372,21,42,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_STEP,417,19,38,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Create_Sinusoidal",IDC_MAKE_SINE,369,143,87,20
+    RTEXT           "Frequency",IDC_STATIC,371,129,42,11,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SINE,416,129,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "5. Input Command",IDC_STATIC,363,7,96,189
+    LTEXT           "Samples",IDC_STATIC,463,89,30,8
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 500, 300
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Graph"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,347,279,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,407,279,50,14
+    CONTROL         "",IDC_DLG_IMAGE,"Static",SS_BLACKFRAME,29,7,464,255
+    EDITTEXT        IDC_SAMPLING_EIDT,86,277,32,16,ES_AUTOHSCROLL
+    RTEXT           "X_Value(sampling)",IDC_STATIC,15,277,66,16,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_POSITION_EDIT,190,277,32,16,ES_AUTOHSCROLL
+    RTEXT           "Y_Value(Position)",IDC_STATIC,119,277,66,16,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "DOWN",IDC_DOWN_BUTTON,255,277,25,16
+    PUSHBUTTON      "UP",IDC_UP_BOTTON,228,277,25,16
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "UCMC_EducationKit MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "UCMC_EducationKit\0"
+            VALUE "LegalCopyright", "Copyright (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "UCMC_EducationKit.EXE\0"
+            VALUE "ProductName", "UCMC_EducationKit 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_UCMC_EDUCATIONKIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 326
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 493
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 293
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "UCMC_EducationKit 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\UCMC_EducationKit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

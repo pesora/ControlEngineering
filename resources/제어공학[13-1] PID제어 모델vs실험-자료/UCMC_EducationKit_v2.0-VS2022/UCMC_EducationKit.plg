@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: UCMC_EducationKit - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\user\LOCALS~1\Temp\RSP97D.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/UCMC_EducationKit.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\2012연구년\아진과제\UCMC모터제어2012\UCMC_EducationKit_20100423_v2.0-VS2008\UCMC_EducationKitDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\user\LOCALS~1\Temp\RSP97D.tmp" 
+Creating temporary file "C:\DOCUME~1\user\LOCALS~1\Temp\RSP97E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/UCMC_EducationKit.pdb" /debug /machine:I386 /out:"Debug/UCMC_EducationKit.exe" /pdbtype:sept 
+".\Debug\DevBusUART_RS232.obj"
+".\Debug\DevServoMotor_UCMC_UART.obj"
+".\Debug\GRAPHDLG.obj"
+".\Debug\mmtm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\UCMC_EducationKit.obj"
+".\Debug\UCMC_EducationKitDlg.obj"
+".\Debug\UCMC_EducationKit.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\user\LOCALS~1\Temp\RSP97E.tmp"
+<h3>Output Window</h3>
+Compiling...
+UCMC_EducationKitDlg.cpp
+D:\2012연구년\아진과제\UCMC모터제어2012\UCMC_EducationKit_20100423_v2.0-VS2008\UCMC_EducationKitDlg.cpp(616) : warning C4101: 'size' : unreferenced local variable
+D:\2012연구년\아진과제\UCMC모터제어2012\UCMC_EducationKit_20100423_v2.0-VS2008\UCMC_EducationKitDlg.cpp(617) : warning C4101: 'buf' : unreferenced local variable
+D:\2012연구년\아진과제\UCMC모터제어2012\UCMC_EducationKit_20100423_v2.0-VS2008\UCMC_EducationKitDlg.cpp(623) : warning C4101: 'temp' : unreferenced local variable
+D:\2012연구년\아진과제\UCMC모터제어2012\UCMC_EducationKit_20100423_v2.0-VS2008\UCMC_EducationKitDlg.cpp(620) : warning C4101: 'k' : unreferenced local variable
+Linking...
+
+
+
+<h3>Results</h3>
+UCMC_EducationKit.exe - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,10 @@
+R=16.4;
+J=3.8e-7;
+Ke=3.2086e-2;
+Kt=3.21e-2;
+b=0;
+Tconst=R*J/(R*b*Ke*Kt);
+K=Kt/(R*b*Ke*Kt);
+num=[K];
+den=[Tconst 1];
+printsys(num,den);
